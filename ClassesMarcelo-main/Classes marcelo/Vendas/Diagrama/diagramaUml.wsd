@@ -1,0 +1,39 @@
+@startuml
+
+class Produto {
+    int id
+    String nome
+    double preco
+    int estoque
+}
+
+class Cliente {
+    int id
+    String nome
+    String email
+    String endereco
+}
+
+class Pedido {
+    int id
+    Cliente cliente
+    String data
+    String status
+}
+
+class Rastreamento {
+    int id
+    Pedido pedido
+    String status
+    String dataAtualizacao
+}
+
+class Pagamento {
+    int id
+    Pedido pedido
+    double valor
+    String data
+    String metodo
+}
+
+@enduml

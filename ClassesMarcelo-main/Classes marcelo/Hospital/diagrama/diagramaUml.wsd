@@ -1,0 +1,33 @@
+@startuml
+
+class Paciente {
+    String nome
+    int idade
+    String sexo
+    }
+
+class Medico {
+    String nome
+    String especialidade
+    String crm
+}
+
+class Consulta {
+    Paciente paciente
+    Medico medico
+    String dataConsulta
+}
+
+class Exame {
+    String tipo
+    Paciente paciente
+    String dataPedido
+}
+
+class Leito {
+    int numero
+    boolean disponivel
+}
+
+
+@enduml

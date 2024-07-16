@@ -1,0 +1,42 @@
+@startuml
+
+class Cliente {
+    int id
+    String nome
+    String endereco
+    String telefone
+    String email
+}
+
+class Processo {
+    int id
+    String descricao
+    String status
+    Cliente cliente
+    Advogado advogado
+}
+
+class Documento {
+    int id
+    String titulo
+    String conteudo
+    Processo processo
+}
+
+class Agendamento {
+    int id
+    Date data
+    String descricao
+    Cliente cliente
+    Advogado advogado
+}
+
+class Advogado {
+    int id
+    String nome
+    String oab
+    String especialidade
+}
+
+
+@enduml

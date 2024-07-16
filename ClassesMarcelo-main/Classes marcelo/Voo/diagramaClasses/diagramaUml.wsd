@@ -1,0 +1,37 @@
+@startuml
+
+class Usuario {
+    String nome
+    String email
+    String telefone
+}
+
+class Voo {
+    String companhiaAerea
+    String origem
+    String destino
+    String horarioPartida
+    String horarioChegada
+    double preco
+}
+
+class Assento {
+    String numero
+    String classe
+}
+
+class ServicoExtra {
+    String descricao
+    double preco
+}
+
+class Reserva {
+    Usuario usuario
+    Voo voo
+    Assento assento
+    ServicoExtra servicoExtra
+    String codigoConfirmacao
+}
+
+
+@enduml

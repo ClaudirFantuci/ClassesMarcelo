@@ -1,0 +1,36 @@
+@startuml
+
+class Livro {
+    String titulo
+    String autor
+    String editora
+    String categoria
+}
+
+class Aluno {
+    String nome
+    String ra
+    String cpf
+    String endereco
+}
+
+class Professor {
+    String nome
+    String cpf
+    String disciplina
+}
+
+class Emprestimo {
+    Livro livro
+    Aluno aluno
+    String dataRetirada
+    String dataDevolucao
+}
+
+class Reserva {
+    Livro livro
+    Aluno aluno
+    String dataReserva
+}
+
+@enduml

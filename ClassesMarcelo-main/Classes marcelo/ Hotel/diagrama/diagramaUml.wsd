@@ -1,0 +1,35 @@
+@startuml
+
+class Quarto {
+    int numero
+    boolean ocupado
+    double precoDiaria
+}
+
+class Reserva {
+    Quarto quarto
+    String dataCheckIn
+    String dataCheckOut
+    String hospedeNome
+}
+
+class Hospede {
+    String cpf
+    String telefone
+    String nome
+    String email
+}
+
+class Servico {
+    double preco
+    String nome
+    String descricao
+}
+
+class Funcionario {
+    String nome
+    String cargo
+    double salario
+}
+
+@enduml
